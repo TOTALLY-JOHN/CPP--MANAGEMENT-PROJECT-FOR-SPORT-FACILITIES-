@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>0</y>
+      <w>198</w>
+      <h>234</h>
+    </coordinates>
+    <panel_attributes>CREATURE
+--
+-name: string
+-strength: double
+-hitPoints: double
+--
+Creature()
+virtual ~Creature()
+Creature(string, string, double)
+setName(string): void
+setStrength(double): void
+setHitPoints(double): void
+getName(): string
+getStrength(): double
+getHitPoints(): double
+virtual display(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>315</y>
+      <w>351</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>WIZARD
+--
+-magicalDamage: double
+-wand: bool
+-armor: double
+-shield: double
+--
+Wizard()
+Wizard(string, double, double, double, bool, double, double)
+setMagicalDamage(double): void
+setWand(bool): void
+setArmor(double): void
+setShield(double): void
+getMagicalDamage(): double
+getWand(): bool
+getArmor(): double
+getShield(): double
+display(): void
+displayArmorShield(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>657</x>
+      <y>315</y>
+      <w>360</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>DWARF
+--
+-height: double
+-speed: double
+-armor: double
+-shield: double
+--
+Dwarf()
+Dwarf(string, double, double, double, double, double, double)
+setHeight(double): void
+setSpeed(double): void
+setArmor(double): void
+setShield(double): void
+getHeight(): double
+getSpeed(): double
+getArmor(): double
+getShield(): double
+display(): void
+displayArmorShield(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>315</y>
+      <w>252</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>ELF
+--
+-armor: double
+-shield: double
+--
+Elf()
+Elf(string, double, double, double, double)
+setArmor(double): void
+setShield(double): void
+getArmor(): double
+getShield(): double
+display(): void
+displayArmorShield(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1044</x>
+      <y>315</y>
+      <w>324</w>
+      <h>225</h>
+    </coordinates>
+    <panel_attributes>DEMON
+--
+-speed: double
+-armor: double
+-shield: double
+--
+Demon()
+Demon(string, double, double, double, double, double)
+setSpeed(double): void
+setArmor(double): void
+setShield(double): void
+getSpeed(): double
+getArmor(): double
+getShield(): double
+display(): void
+displayArmorShield(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>153</x>
+      <y>225</y>
+      <w>504</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>540.0;10.0;540.0;50.0;10.0;50.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>495</x>
+      <y>225</y>
+      <w>162</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;160.0;50.0;10.0;50.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>225</y>
+      <w>234</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;240.0;50.0;240.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>225</y>
+      <w>576</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;620.0;50.0;620.0;100.0</additional_attributes>
+  </element>
+</diagram>
